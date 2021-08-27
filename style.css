@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+*{margin: 0 auto;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #2e70d0;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  position :relative;
+}
+
+p{
+font-size: 1.4em;
+}
+
+h1{
+  font-size: 1em;
+  background-color: #2e70d0;
+  border-radius: 10px;
+  padding-left: 5%;
+}
+
+.restos{
+  background-color: #00398a;
+}
+
+.click{
+  font-size: 1em;
+  text-decoration: none;
+  color: #00a2ff;
+}
+
+.praimg{
+  margin: 5px;
+}
+
+.aimg{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imagensmenuopen{
+  width: 70px; 
+  height: 70px;
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: auto;
+}
+
+.menuopen{
+  display: block;
+  flex-direction: column;
+  margin:12% ;
+}
+
+.menuopen > section{
+  border: solid 2px;
+  align-self: center;
+  padding: 5%;
+  margin: 10px;
+}
+
+.menuimg{ 
+  width: 20px; 
+}
+
+header{
+  background-color: #00398a;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.busqueaqui{
+  display: flex;
+  align-items: center; 
+}
+
+.pesquisa{
+  font-size: 14px;
+  border: 0;
+  border-radius: 0.2em;
+}
+
+.divlogobutton{
+  display: inline-block;
+}
+
+.buttonlogo{
+  color: #fff;
+  background-color: #00398a;
+  padding: 16px;
+  border: none;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.4em;
+}
+
+.meny {
+  background-color: #00398a;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+  
+/* O contêiner <div> - necessário para posicionar o conteúdo suspenso */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  font-size: 0.8em;
+  right: 0;
+}
+  
+/* Conteúdo suspenso (oculto por padrão) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 1.5em;
+  right: 0;
+  width: 22.2em;
+}
+  
+/* Links dentro da lista suspensa */
+.dropdown-content a {
+  box-sizing: border-box;
+  color: black;
+  padding: 0.7em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+  display: block;  
+}
+  
+/* Alterar a cor dos links suspensos ao passar o mouse */
+.dropdown-content a:hover {
+  background-color: #2e70d0;
+  color: #fff;
+}
+  
+/* Mostra o menu suspenso ao passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:white;
+}
+
+/* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso é mostrado */
+.dropdown:hover .meny {
+    background-color:#00398a;
+    color: #fff;
+}
+
+.menuinline{display: none;}
+
+@media only screen and (min-width: 374px){
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    right: 0;
+    width: 20em;
+  }
+  }
+@media only screen and (min-width: 414px){
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 1.5em;
+  right: 0;
+  width: 22em;
+}
+}
+
+@media only screen and (min-width: 424px){
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 1.5em;
+  right: 0;
+  width: 22.3em;
+}
+}
+
+
+@media only screen and (min-width: 767px){
+
+*{margin: auto;
+  box-sizing: border-box;
+}
+
+.menuinline{
+  display: inline ;
+  list-style: none;
+}
+
+.menuinline >a{
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
+.dropdown{display: none;
+}
+}
